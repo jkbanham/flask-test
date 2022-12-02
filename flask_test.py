@@ -26,12 +26,12 @@ def home():
             #Calculate Total 
             price= (sizeValue * quantity)
             total=price+(price*0.06)
-            return render_template("/app/Yourorder.html").format(name=name,size=size,quantity=quantity,total=total,crema=crema)
+            return render_template("Yourorder.html").format(name=name,size=size,quantity=quantity,total=total,crema=crema)
         
     else:    
         
-            #return render_template("/app/home.html")
-            return "<html><body>This is the output</body></html>"
+            return render_template("home.html")
+            #return "<html><body>This is the output</body></html>"
                            
                            
 if __name__ =="__main__" :
