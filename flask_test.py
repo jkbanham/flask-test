@@ -30,7 +30,8 @@ def home():
         
     else:    
         
-            return render_template("/app/home.html")
+            #return render_template("/app/home.html")
+            print("<html><body>This is the output</body></html>")
                            
                            
 if __name__ =="__main__" :
