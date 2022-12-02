@@ -26,13 +26,11 @@ def home():
             #Calculate Total 
             price= (sizeValue * quantity)
             total=price+(price*0.06)
-            #return render("Yourorder.html").format(name=name,size=size,quantity=quantity,total=total,crema=crema)
-            print("<html><body>Your order is here</body></html>")
+            return render("Yourorder.html").format(name=name,size=size,quantity=quantity,total=total,crema=crema)
         
     else:    
         
-            #return render("home.html")
-            print("<html><body>Home page is here</body></html>")
+            return render("home.html")
                            
                            
 if __name__ =="__main__" :
