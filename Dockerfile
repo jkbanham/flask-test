@@ -6,7 +6,7 @@ COPY ./requirements.txt /app/requirements.txt
 
 # copy the html files into a new templates folder
 COPY ./Yourorder.html /app/templates/Yourorder.html
-#COPY ./home.html /app/templates/home.html
+COPY ./home.html /app/templates/home.html
 
 # switch working directory
 WORKDIR /app
